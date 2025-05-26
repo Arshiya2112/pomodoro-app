@@ -1,0 +1,74 @@
+.quote-box {
+  background: rgba(255, 255, 255, 0.06);
+  padding: 1.5rem 2rem;
+  border-radius: 1rem;
+  margin: 2rem auto;
+  text-align: center;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(8px);
+  transition: all 0.3s ease;
+  max-width: 700px;
+  width: 90%;
+}
+
+body.light .quote-box {
+  background-color: white;
+}
+
+.quote-text {
+  font-size: 1.2rem;
+  font-style: italic;
+  color: #ffffff;
+  margin-bottom: 0.5rem;
+}
+
+body.light .quote-text {
+  color: #1f1f1f;
+}
+
+.quote-author {
+  font-size: 1rem;
+  color: #ccc;
+  margin-bottom: 1rem;
+}
+
+body.light .quote-author {
+  color: #1f1f1f;
+}
+
+.quote-btn {
+  padding: 0.4rem 1rem;
+  border: none;
+  border-radius: 30px;
+  background: #3b82f6;
+  color: white;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  font-size: 0.95rem;
+}
+
+.quote-btn:hover {
+  background: #2563eb;
+}
+
+/* ✅ Mobile responsiveness */
+@media (max-width: 480px) {
+  .quote-box {
+    padding: 1rem 1.2rem;
+    border-radius: 0.8rem;
+  }
+
+  .quote-text {
+    font-size: 1rem;
+  }
+
+  .quote-author {
+    font-size: 0.9rem;
+  }
+
+  .quote-btn {
+    font-size: 0.85rem;
+    padding: 0.4rem 0.8rem;
+  }
+}
